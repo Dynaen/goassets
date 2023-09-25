@@ -1,0 +1,132 @@
+#__next > div > div > div:nth-child(3) {
+  display: none;
+}
+
+/*div[class^="styles__ContainerRight"] {
+	display: none;
+}*/
+div[class^="styles__ContainerLeft"] {
+  width: auto;
+}
+div[class^="styles__ContainerLeft"] h3 {
+  display: none;
+}
+div[class^="styles__Box-"] {
+  border: none;
+}
+
+h1 {
+  display: none;
+}
+
+section[width="100%"] > div:nth-child(1) {
+  display: none;
+}
+
+section[width="100%"] div[class^="styles__CTAWrapper"] > div {
+  display: none;
+}
+.sp-tagline {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: #231b22;
+  margin-top: 12px;
+}
+.eyebrow {
+  color: #6b6b78;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 5.12px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+div[class^="styles__PriceWrapper"] {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 120%;
+}
+#sp-list {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+#sp-list li {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+#sp-list div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+#sp-list svg {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  min-height: 24px;
+  margin-right: 16px;
+  margin-top: 21px;
+}
+#sp-list p {
+  margin: 16px 0;
+}
+section[width="100%"] div[class^="styles__CTAWrapper"] button:nth-of-type(2) {
+  font-size: 16px;
+}
+@media (min-width: 599px) and (max-width: 767px) {
+  section[width="100%"] div[class^="styles__CTAWrapper"] button:nth-of-type(2) {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  #sp-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #sp-list li {
+    flex: 1 0 50%;
+  }
+  #sp-list li div {
+    width: 50%;
+    margin: 0 auto;
+  }
+  #sp-list li:last-child div {
+    width: 33%;
+  }
+  .eyebrow {
+    margin: 12px auto 0px auto;
+    text-align: center;
+  }
+  div[class^="styles__ContainerRight"] .eyebrow {
+    margin-bottom: 24px;
+  }
+  section[width="100%"] div[class^="styles__CTAWrapper"] {
+    justify-content: center;
+  }
+  div[class^="styles__DescriptionWrapper-"] {
+    margin: 0 auto;
+  }
+  div[class^="styles__PriceWrapper"] {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1023px) {
+  div[class^="styles__ContainerLeft"] {
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  div[class*="styles__Container-"] {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: space-evenly;
+  }
+  div[class^="styles__PriceWrapper"] {
+    font-size: 48px;
+  }
+}
