@@ -10,20 +10,15 @@ checkIfReady(function () {
   newHero();
 });
 function newHero() {
-  console.log("new hero..");
-
   const targetNode = document.body;
   const config = { childList: true, subtree: true, characterData: true };
-
+  
   const observer = new MutationObserver((mutations, obs) => {
-    const pricewrap = document.querySelector(
-      "div[class^='styles__PriceWrapper'] h2 span"
-    );
+    const pricewrap = document.querySelector("div[class^='styles__PriceWrapper'] h2 span");
     const leftcontainer = document.querySelector(
       "div[class^='styles__ContainerLeft'] div[class^='styles__Box']"
     );
     for (const mutation of mutations) {
-      console.log(mutation.target);
 
       if (mutation.type === "characterData") {
         if (mutation.target.parentElement === document.querySelector("h1")) {
@@ -39,10 +34,9 @@ function newHero() {
       }
     }
   });
-  observer.observe(targetNode, config);
+ observer.observe(targetNode, config);
 }
 function init() {
-  console.log("init..");
   document.querySelector("div[class^='styles__PriceWrapper']").id =
     "#sp-monthly";
   let eyebrow = document.querySelector("#eyebrow");
@@ -64,6 +58,10 @@ function init() {
     if (tagline) {
       tagline.classList.add("sp-tagline");
       tagline.innerHTML = getEmployee();
+    }
+    let mainCTA = document.querySelector("div[class^='styles__ContainerLeft']  button[class*='styles__CustomButton'] span");
+    if(mainCTA) {
+    	mainCTA.innerHTML = `See subscription details`;
     }
     let sizeButton = document.querySelector(
       "div[class^='styles__ContainerLeft'] div[class^='styles__Box'] button"
@@ -99,13 +97,14 @@ function updateNumbers() {
   let tagline = document.querySelector(
     "div[class^='styles__DescriptionSection']"
   );
+  let mainCTA = document.querySelector("div[class^='styles__ContainerLeft']  button[class*='styles__CustomButton'] span");
   if (!initRan) {
     init();
     return;
   }
-  console.log(monthlyPrice);
   monthlyPrice.textContent = getMonthlyPrice();
   tagline.innerHTML = getEmployee();
+  mainCTA.innerHTML = `See subscription details`;
 }
 
 function getEmployee() {
