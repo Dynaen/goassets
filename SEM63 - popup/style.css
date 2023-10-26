@@ -1,0 +1,24 @@
+.speero-list li {
+  margin-bottom: 6px;
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  grid-template-rows: auto;
+  grid-template-columns: 22px auto;
+  column-gap: 12px;
+}
+.speero-list li:before {
+  content: " ";
+  background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.7071 0.292893C22.0976 0.683417 22.0976 1.31658 21.7071 1.70711L7.70711 15.7071C7.31658 16.0976 6.68342 16.0976 6.29289 15.7071L0.292893 9.70711C-0.0976311 9.31658 -0.0976311 8.68342 0.292893 8.29289C0.683417 7.90237 1.31658 7.90237 1.70711 8.29289L7 13.5858L20.2929 0.292893C20.6834 -0.0976311 21.3166 -0.0976311 21.7071 0.292893Z' fill='%23191B23'/%3E%3C/svg%3E%0A");
+  background-size: 22px 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+.speero-pop h6 > span {
+  display: block;
+  margin-top: 10px;
+}
