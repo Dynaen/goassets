@@ -1,19 +1,3 @@
-<svg
-  width="17"
-  height="13"
-  viewBox="0 0 17 13"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M2 7.46796L6.136 11.585L15 1.58496"
-    stroke="#FF7F00"
-    stroke-width="2.4"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
-</svg>;
-
 function checkIfReady(fn) {
   if (document.readyState != "loading") {
     fn();
