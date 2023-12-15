@@ -1,0 +1,72 @@
+button[data-test="sticky-header-search-trigger"] {
+  display: none;
+}
+div[data-test="sticky-header-base"]
+  div[data-test="horizontal-wrapper"]
+  > div
+  > div
+  > div {
+  margin-right: 12px;
+}
+div[data-test="sticky-header-base"]
+  div[data-test="horizontal-wrapper"]
+  > div
+  > div
+  > div
+  > div {
+  height: 44px !important;
+  max-width: 261px;
+}
+div[data-test="sticky-header-base"]
+  div[data-test="horizontal-wrapper"]
+  input[data-test="search_input"] {
+  padding-left: 11px !important;
+}
+div[data-test="sticky-header-base"]
+  div[data-test="horizontal-wrapper"]
+  > div
+  > div
+  > div
+  + button {
+  height: 44px !important;
+  font-size: 16px !important;
+  padding-left: 4px !important;
+  padding-right: 4px !important;
+}
+@media only screen and (max-width: 768px) {
+  div[data-test="sticky-header-base"]
+    div[data-test="horizontal-wrapper"]
+    > div
+    > div
+    > div:nth-child(2) {
+    margin-bottom: 0px;
+    min-width: 150px;
+  }
+  div[data-test="sticky-header-base"]
+    div[data-test="horizontal-wrapper"]
+    > div
+    > div
+    > div
+    > div {
+    height: 30px !important;
+  }
+  div[data-test="sticky-header-base"]
+    div[data-test="horizontal-wrapper"]
+    > div
+    > div
+    > div
+    + button {
+    height: 30px !important;
+  }
+  div[data-test="sticky-header-base"]
+    div[data-test="horizontal-wrapper"]
+    > div
+    > div
+    > div
+    + button:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+}
