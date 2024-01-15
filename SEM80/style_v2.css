@@ -1,0 +1,29 @@
+div[data-test="semrush-popup"] h6 {
+  color: #191b24;
+opacity: 0;
+  animation: fadeIn 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;
+}
+div[data-test="semrush-popup"] a[data-test="description"] {
+  color: #3d424c;
+opacity: 0;
+  animation: fadeIn 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;
+}
+div[data-test="semrush-popup"] a[data-test="cta-button"] {
+opacity: 0;
+  animation: fadeIn 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;  
+font-weight: 500;
+}
+div[data-test="semrush-popup"] ul li {
+opacity: 0;
+  animation: fadeIn 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s forwards;
+  letter-spacing: -0.16px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
