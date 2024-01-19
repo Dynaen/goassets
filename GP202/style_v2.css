@@ -1,0 +1,194 @@
+.speero-container {
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  position: relative;
+  padding: 80px 0px;
+}
+.speero-container img {
+  max-width: 100%;
+}
+.speero-container-inner {
+  max-width: 1600px;
+}
+.speero-container h2 {
+  color: #231b22;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Sharp Sans Bold";
+  line-height: 1.2;
+}
+.speero-container .tagline {
+  color: #6b6b78;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 12px;
+  line-height: 140%;
+}
+.speero-tab-content {
+  max-width: 1060px;
+  margin: auto;
+}
+.speero-tab-content .col:first-of-type {
+  margin-bottom: 40px;
+}
+.speero-tab-content > div {
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.speero-tab-content > div.active {
+  display: flex;
+}
+.speero-tab-content h4 {
+  color: #231b22;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  margin-top: 40px;
+  font-family: "Sharp Sans Bold";
+}
+.speero-tab-content p {
+  color: #6b6b78;
+  font-size: 20.038px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.speero-container .nav {
+  position: relative;
+  margin: 60px 0 65px;
+  text-align: center;
+}
+.speero-container .nav-link {
+  color: #6b6b78;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 21px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  min-height: 55px;
+}
+#nav-1,
+#nav-2 {
+  border-bottom: 1px solid #d7d7e0;
+}
+.speero-container .nav-link.active {
+  background: transparent !important;
+  color: #d8385e;
+}
+.speero-container .indicator {
+  position: absolute;
+  top: 100%;
+  min-width: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(216, 56, 94);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.nav-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 188px);
+  justify-content: center;
+}
+.nav-wrap {
+  display: inline-block;
+}
+.sp-button-wrap {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+.sp-button {
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: auto;
+  height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: rgb(216, 56, 94);
+  border: none;
+  border-radius: 9999px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Rubik;
+  letter-spacing: normal;
+  line-height: 1;
+  text-decoration: none;
+  transition: fill 0.2s ease 0s;
+  background-color: transparent;
+  border: 1px solid rgb(216, 56, 94);
+  color: rgb(216, 56, 94);
+}
+.sp-button:hover {
+  background-color: rgb(216, 56, 94);
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(216, 56, 94, 0.45) 0px 4px 8px;
+}
+@media (min-width: 0px) {
+  .speero-container-inner {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .speero-container .nav-inner {
+    grid-template-columns: repeat(4, 188px);
+  }
+  .speero-container .nav-link {
+    border-bottom: 1px solid #d7d7e0;
+  }
+  .speero-tab-content > div {
+    flex-direction: row;
+    text-align: left;
+  }
+  .speero-tab-content .col:first-of-type {
+    margin-right: 42px;
+    margin-bottom: 0px;
+    flex: 0 1 524px;
+  }
+  .speero-tab-content .col:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 auto;
+  }
+  .speero-container .nav {
+    position: relative;
+    margin: 70px 0 75px;
+  }
+}
+@media (min-width: 1024px) {
+  .speero-container-inner {
+    margin-left: 71px;
+    margin-right: 71px;
+  }
+  .speero-container h2 {
+    font-size: 48px;
+    font-family: "Rubik";
+  }
+  .speero-tab-content h4 {
+    margin-top: 0px;
+    font-family: "Rubik";
+  }
+}
+@media (min-width: 1742px) {
+  .speero-container-inner {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
