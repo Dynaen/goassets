@@ -1,0 +1,68 @@
+div[class*="breadcrumbs__"] {
+  display: none;
+}
+div[data-test="root-search-section"] {
+  background-color: rgba(252, 224, 129, 1);
+  margin: 0px 0px 60px;
+  padding: 40px 20px;
+  max-width: 100% !important;
+}
+div[class^="root-search-section_wrap__"] {
+  max-width: 100% !important;
+  text-align: center;
+}
+div[class^="root-search-section_wrap__"] h1 {
+  font-size: 32px;
+  line-height: 36px;
+}
+div[class^="root-search-section_subheading"] {
+  text-align: center;
+  margin-top: 8px;
+}
+
+div[data-test="root-search-section"] div[data-test="search"] {
+  justify-content: center;
+}
+
+div[data-test="root-search-section"] div[data-test="search-examples"] {
+  justify-content: center;
+}
+
+div[data-test="root-search-section"]:after {
+  display: none;
+}
+/*search icon*/
+div[data-test="root-search-section"] div[class^="search_icon__"] svg {
+  display: none;
+}
+div[data-test="root-search-section"] div[class^="search_icon__"] #sp {
+  display: block;
+}
+div[class*="search-examples_examples"] {
+  justify-content: center;
+}
+div[data-test="search-examples"] span {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  div[data-test="search-examples"] span {
+    text-align: left;
+  }
+  div[class*="search-examples_examples"] {
+    justify-content: left;
+  }
+  div[class^="root-search-section_wrap__"] h1 {
+    font-size: 60px;
+    line-height: 72px;
+  }
+  div[data-test="root-search-section"] {
+    margin: 0px 0px 80px;
+    padding: 80px 40px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  div[data-test="root-search-section"] {
+    margin: 8px 0px 120px;
+    padding: 80px 48px;
+  }
+}
